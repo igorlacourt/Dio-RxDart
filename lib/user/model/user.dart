@@ -17,5 +17,4 @@ class User {
         location = Location.fromJson(json["location"]),
         email = json["email"],
         picture = Picture.fromJson(json["picture"]);
-
 }

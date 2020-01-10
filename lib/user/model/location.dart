@@ -1,5 +1,7 @@
+import 'package:dio_rxdart/user/model/street.dart';
+
 class Location {
-  final String street;
+  final Street street;
   final String city;
   final String state;
 
@@ -7,7 +9,7 @@ class Location {
   Location(this.street, this.city, this.state);
 
   Location.fromJson(Map<String, dynamic> json)
-      : street = json["street"],
+      : street = Street.fromJson(json["street"]),
         city = json["city"],
         state = json["state"];
 }
